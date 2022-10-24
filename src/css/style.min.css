@@ -1,7 +1,1 @@
-html {
-    font-family: 'MuseoSansCyrl', sans-serif;
-}
-p{
-    font-size: 16px;
-    font-weight: 900;
-}
+*{font-family:"Museo Sans Cyrl",sans-serif}.container{max-width:950px;margin:0 auto}.promo{min-height:650px;padding:21px 0 93px 0;background:url(../../img/bg_main.jpeg) center center/cover no-repeat}.header{display:flex;align-items:center;justify-content:space-between}.header__logo{width:251px}.header__logo img{width:100%}.header__official{font-weight:500;font-size:12px;color:#fff;text-align:center}.header__official span{display:block;font-size:18px}
