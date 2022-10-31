@@ -72,7 +72,7 @@
             flex-direction: column;
         }
         &__icon {
-            width: 55%;
+            width: 75%;
             margin: 0 auto;
             padding: 0 10px;
             font-weight: 300;
@@ -84,6 +84,26 @@
             }
         }
      
+    }
+    .consultation {
+        padding: 65px 0 108px 0;
+        .title_left{
+            font-size: 20px;
+            line-height: 20px;
+            color: #fff;
+            text-align: center;
+        }
+        .consultation__descr {
+            font-size: 15px;
+            line-height: 30px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+        .feed-form {
+            margin: 0 auto;
+            margin-top: 36px;
+        }
+
     }
    
     
