@@ -40,9 +40,12 @@
     }
     &__content {
         margin-top: 57px;
-        display: flex;
+        display: none;
         justify-content: space-between;
         flex-wrap: wrap;
+        &_active {
+            display: flex;
+        }
     }
     &-item {
         width: 303px;
@@ -73,7 +76,7 @@
             text-align: center;
             color: #0D0D0D;
         }
-        &__link, &__back {
+        &__link {
             text-align: center;
             color: $main_color;
             font-weight: 500;
@@ -86,9 +89,7 @@
                 color: $main_color;
             }
         }
-        &__back {
-            margin-top: 75px;
-        }
+       
         hr {
             margin: 17px 0 24px 0;
             background: #E8E8E8;
@@ -157,6 +158,21 @@
                     top: 6px;
 
                 }
+            }
+        }
+        &__back {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(calc(-50% - 18px));
+            color: $main_color;
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: uppercase;
+            display: block;
+            text-decoration: underline;
+            &:hover {
+                color: $main_color;
             }
         }
     }
