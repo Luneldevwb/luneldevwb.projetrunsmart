@@ -10,7 +10,14 @@ $(document).ready(function () {
             settings: {
                 dots: true,
                 arrows: false
-            }
+            },
+            
+            breakpoint: 480,
+            settings: {
+                dots: true,
+                arrows: false
+                }
+            
         }]
 
     });
