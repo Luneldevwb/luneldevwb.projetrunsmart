@@ -105,6 +105,23 @@
         }
 
     }
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+        }
+        &__tab {
+            margin: 5px 0;
+            cursor: none;
+            &:hover {
+                box-shadow: none;
+                border: 2px solid #d0d0d0;
+            }
+        }
+        &-item {
+            margin: 0 auto;
+
+        }
+    }
    
     
 }
