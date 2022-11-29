@@ -114,8 +114,8 @@
             cursor: none;
             &:hover {
                 box-shadow: none;
-                border: 2px solid #d0d0d0;
-            }
+                border: 2px solid $main_color;
+            }                
         }
         &-item {
             margin: 0 auto;
