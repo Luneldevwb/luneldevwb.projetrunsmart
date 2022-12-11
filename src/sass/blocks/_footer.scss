@@ -1,0 +1,56 @@
+.footer {
+    position: relative;
+    height: 630px;
+    &__info {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 460px;
+        height: 270px;
+        background: $main_color;
+        padding: 50px 53px 56px 54px;
+    }
+    &__addr {
+        margin-bottom: 36px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 20px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    &__phone {
+        display: block;
+        margin-bottom: 36px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        color: #FFFFFF;
+        text-align: center;
+        text-decoration: none;
+        &:hover {
+            color: #FFFFFF;
+        }
+
+    }
+    //au cas où on aurait utiliser les icones en format svg.
+    &__social-item {
+        // width: 53px;
+        // height: 52px;
+        // border: 2px solid #FFFFFF;
+        // border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 15px;
+        // img {
+        //     height: 27px;
+        // }
+    }
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
