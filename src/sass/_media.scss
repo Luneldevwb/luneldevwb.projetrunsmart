@@ -109,7 +109,7 @@
         &__tabs {
             flex-direction: column;
         }
-        &__tab {
+        .catalog__tab {
             margin: 5px 0;
             cursor: none;
             &:hover {
@@ -143,6 +143,7 @@
             text-align: center;
         }
     }
-   
-    
+    .footer__info {
+        width: 100%;
+    }
 }
