@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -69,29 +69,38 @@
     <section class="avantages">
         <div class="container">
             <h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
-            <div class="avantages__icons">
-                <div class="avantages__icon">
-                    <img src="icons/cup.png" alt="cup">
-                    <div class="avantages__head">Делимся опытом</div>
-                    Наши сотрудники всегда готовы поделиться своим опытом, <br>так как сами бегают полумарафоны,
-                    переплыли Босфор, готовятся к соревнованиям по триатлону!
+            <div class="avantages__wrapper">
+                <div class="avantages__item">
+                    <img src="icons/cup.png" alt="cup" class="avantages__icon">
+                    <div class="avantages__subtitle">Делимся опытом</div>
+                    <div class="avantages__descr">
+                        Наши сотрудники всегда готовы поделиться своим опытом, <br>так как сами бегают полумарафоны,
+                        переплыли Босфор, готовятся к соревнованиям по триатлону!
+                    </div>
                 </div>
 
-                <div class="avantages__icon">
-                    <img src="icons/heart.png" alt="heart">
-                    <div class="avantages__head"> Заботимся о здоровье</div>
-                    Мы работаем для того, <br>чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость
-                    Вам и Вашим близким!
+                <div class="avantages__item">
+                    <img src="icons/heart.png" alt="heart" class="avantages__icon avantages__icon_animated">
+                    <div class="avantages__subtitle"> Заботимся о здоровье</div>
+                    <div class="avantages__descr">
+                        Мы работаем для того, <br>чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в
+                        радость
+                        Вам и Вашим близким!
+                    </div>
+
                 </div>
 
-                <div class="avantages__icon">
-                    <img src="icons/shoe.png" alt="shoe">
-                    <div class="avantages__head">Учим бегать</div>
-                    Помогаем с обучением <br>правильной технике бега!<br> Дружим с крупнейшей школой бега в России - <a
-                        href="#">
-                        <!-- I LOVE RUNNING -->
-                        <img src="icons/letters.png" alt="letters">
-                    </a>
+                <div class="avantages__item">
+                    <img src="icons/shoe.png" alt="shoe" class="avantages__icon" >
+                    <div class="avantages__subtitle">Учим бегать</div>
+                    <div class="avantages__descr">
+                        Помогаем с обучением <br>правильной технике бега!<br> Дружим с крупнейшей школой бега в России -
+                        <a href="#">
+                            <!-- I LOVE RUNNING -->
+                            <img src="icons/letters.png" alt="letters">
+                        </a>
+                    </div>
+
 
                 </div>
 
@@ -109,10 +118,10 @@
             <div class="consultation__descr">
                 Просто заполните форму заявки<br> и мы перезвоним вам в течении 10 минут
             </div>
-            <form id="consultation-form"  class="feed-form" action="#">
+            <form id="consultation-form" class="feed-form" action="#">
                 <input name="name" required type="text" placeholder="Ваше имя">
-                <input name="phone" id="phone" required  placeholder="Ваш телефон">
-                <input name="email" required  placeholder="Ваш E-mail">
+                <input name="phone" id="phone" required placeholder="Ваш телефон">
+                <input name="email" required placeholder="Ваш E-mail">
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
         </div>
@@ -734,7 +743,7 @@
                         возможности.Через некоторое время решила обновить гаджет - не раздумывая обратилась туда же.<br>
                         <br>
                         Новые цели - новый гаджет!<br><br>
-                        Спасибо, RunSmart! 
+                        Спасибо, RunSmart!
                     </div>
                 </div>
 
@@ -742,13 +751,15 @@
 
             <div class="feedbacks__item">
                 <div class="feedbacks__text">
-                    <div class="feedbacks__img"><img src="img/photofb_2.png" alt="feedbacktwo" class="feedbacks__img"></div> 
+                    <div class="feedbacks__img"><img src="img/photofb_2.png" alt="feedbacktwo" class="feedbacks__img">
+                    </div>
                     <div class="feedbacks__descr">
                         <div class="feedbacks__header">Иван Сёмочкин
                         </div>
                         <div class="feedbacks__subtitle">1 полумарафон</div>
                         Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе <br>делал.
-                        <br>Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую тренировку,
+                        <br>Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую
+                        тренировку,
                         научили пользоваться новым гаджетом. Также объяснили основы анатомии, составили план тренировок
                         на месяц вперёд. <br><br>С ними подготовился к своему первому полумарафону! Спасибо!!!
                     </div>
@@ -758,8 +769,8 @@
 
             <div class="feedbacks__item">
                 <div class="feedbacks__text">
-                   <div class="feedbacks__img"><img src="img/photofb_3.png" alt="feedbackthree" ></div> 
-                    
+                    <div class="feedbacks__img"><img src="img/photofb_3.png" alt="feedbackthree"></div>
+
                     <div class="feedbacks__descr">
                         <div class="feedbacks__header">Юлия Дашкина
                         </div>
@@ -778,11 +789,14 @@
     </section>
 
     <footer class="footer">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.43048007664!2d37.646996!3d55.768395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2sMyasnitskiy%20Proyezd%2C%204%2F3%2C%20Moskva%2C%20107078!5e0!3m2!1sfr!2sru!4v1670741097292!5m2!1sfr!2sru" width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.43048007664!2d37.646996!3d55.768395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2sMyasnitskiy%20Proyezd%2C%204%2F3%2C%20Moskva%2C%20107078!5e0!3m2!1sfr!2sru!4v1670741097292!5m2!1sfr!2sru"
+            width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         <div class="footer__info">
             <address class="footer__addr">Москва, Мясницкий проезд, д.3с1</address>
-            <a class="footer__phone"href="tel:84999228974">8 (499) 922-89-74</a>
+            <a class="footer__phone" href="tel:84999228974">8 (499) 922-89-74</a>
             <div class="footer__social">
                 <a href="#" class="footer__social-item"><img src="icons/facebook.png" alt="facebook"></a>
                 <a href="#" class="footer__social-item"><img src="icons/instagram.png" alt="instagram"></a>
@@ -799,9 +813,9 @@
             <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
 
             <form class="feed-form feed-form_mt26" action="#">
-                <input name="name"  type="text" placeholder="Ваше имя">
-                <input name="phone" id="phone" placeholder="Ваш телефон" >
-                <input name="email"  type="text" placeholder="Ваш E-mail">
+                <input name="name" type="text" placeholder="Ваше имя">
+                <input name="phone" id="phone" placeholder="Ваш телефон">
+                <input name="email" type="text" placeholder="Ваш E-mail">
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
         </div>
@@ -813,9 +827,9 @@
             <div class="modal__descr">Пульсометр Polar FT1</div>
 
             <form class="feed-form feed-form_mt26" action="#">
-                <input name="name"  type="text" placeholder="Ваше имя">
-                <input name="phone" id="phone"  placeholder="Ваш телефон" >
-                <input name="email"  type="text" placeholder="Ваш E-mail">
+                <input name="name" type="text" placeholder="Ваше имя">
+                <input name="phone" id="phone" placeholder="Ваш телефон">
+                <input name="email" type="text" placeholder="Ваш E-mail">
                 <button class="button button_submit">Купить</button>
             </form>
         </div>
@@ -825,13 +839,17 @@
             <div class="modal__subtitle">Спасибо за вашу заявку!</div>
             <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
         </div>
-
-
-
     </div>
+
+    <a href="#up" class="pageup">
+        <img src="icons/circlechevron-up.svg" alt="circlechevron-up">
+    </a>
+
+
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <!-- <script src="js/jquery.maskedinput.min.js"></script> -->
