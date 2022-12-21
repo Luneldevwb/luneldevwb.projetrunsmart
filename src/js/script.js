@@ -151,12 +151,12 @@ $(document).ready(function () {
             return;
         }
         $.ajax({
-            type: 'POST',
-            url: 'mailer/smart.php',
+            type: "POST",
+            url: "mailer/smart.php",
             data: $(this).serialize()
 
         }).done(function() {
-            $(this).find('input').val('');
+            $(this).find("input").val("");
             $('#consultation, #order').fadeOut();
             $('.overlay, #thanks').fadeIn('slow');
             $('form').trigger('reset');
@@ -164,5 +164,21 @@ $(document).ready(function () {
         return false;
 
     });
+
+    //Smooth scroll and page up
+    $(window).scroll(function() {
+        if($(this).scrollTop() > 1600) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    $("a[href^='#']").click(function() {
+        const _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+    });
+
 
 });
