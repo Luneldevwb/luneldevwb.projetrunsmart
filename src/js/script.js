@@ -11,13 +11,13 @@ $(document).ready(function () {
                 dots: true,
                 arrows: false
             },
-            
+
             breakpoint: 480,
             settings: {
                 dots: true,
                 arrows: false
-                }
-            
+            }
+
         }]
 
     });
@@ -63,10 +63,10 @@ $(document).ready(function () {
     toggleSlide('.catalog-item__back');
 
     //Modal
-    $('[data-modal=consultation]').on('click', function() {
+    $('[data-modal=consultation]').on('click', function () {
         $('.overlay, #consultation').fadeIn('slow');
     });
-    $('.modal__close').on('click', function() {
+    $('.modal__close').on('click', function () {
         $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
     });
 
@@ -74,11 +74,11 @@ $(document).ready(function () {
     //     $('.overlay, #order').fadeIn('slow');
     // });
 
-    $('.button_mini').each(function(i) {
-        $(this).on('click', function() {
+    $('.button_mini').each(function (i) {
+        $(this).on('click', function () {
             $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
             $('.overlay, #order').fadeIn('slow');
-            
+
         });
     });
     // $('#consultation-form').validate();
@@ -127,11 +127,11 @@ $(document).ready(function () {
                 name: {
                     require: "Please specify your name",
                     minlength: jQuery.validator.format("At least {0} characters required!")
-                }, 
+                },
                 phone: "Please specify your phone",
                 email: {
-                  required: "We need your email address to contact you",
-                  email: "Your email address must be in the format of name@domain.com"
+                    required: "We need your email address to contact you",
+                    email: "Your email address must be in the format of name@domain.com"
                 }
             }
         });
@@ -144,7 +144,7 @@ $(document).ready(function () {
     $("input[name=phone]").inputmask('+7 (999) 999-99-99');
     $("input[name=email]").inputmask('email');
 
-    $('form').submit(function(e) { 
+    $('form').submit(function (e) {
         e.preventDefault();
 
         if (!$(this).valid()) {
@@ -155,7 +155,7 @@ $(document).ready(function () {
             url: "mailer/smart.php",
             data: $(this).serialize()
 
-        }).done(function() {
+        }).done(function () {
             $(this).find("input").val("");
             $('#consultation, #order').fadeOut();
             $('.overlay, #thanks').fadeIn('slow');
@@ -166,19 +166,23 @@ $(document).ready(function () {
     });
 
     //Smooth scroll and page up
-    $(window).scroll(function() {
-        if($(this).scrollTop() > 1600) {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 1600) {
             $('.pageup').fadeIn();
         } else {
             $('.pageup').fadeOut();
         }
     });
 
-    $("a[href^='#']").click(function() {
+    $("a[href^='#']").click(function () {
         const _href = $(this).attr("href");
-        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        $("html, body").animate({
+            scrollTop: $(_href).offset().top + "px"
+        });
         return false;
     });
+
+    new WOW().init();
 
 
 });
