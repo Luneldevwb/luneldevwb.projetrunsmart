@@ -140,7 +140,6 @@ $(document).ready(function () {
     valideForms('#consultation form');
     valideForms('#order form');
 
-    // $('#phone').mask("+7 (999) 999-99-99");
     $("input[name=phone]").inputmask('+7 (999) 999-99-99');
     $("input[name=email]").inputmask('email');
 
@@ -174,7 +173,7 @@ $(document).ready(function () {
         }
     });
 
-    $("a[href^='#']").click(function () {
+    $("a[href=#up]").click(function () {
         const _href = $(this).attr("href");
         $("html, body").animate({
             scrollTop: $(_href).offset().top + "px"
@@ -182,7 +181,9 @@ $(document).ready(function () {
         return false;
     });
 
-    new WOW().init();
+    // new WOW().init();
+    AOS.init();
+
 
 
 });
