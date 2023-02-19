@@ -1,25 +1,42 @@
 $(document).ready(function () {
     $('.carousel__inner').slick({
-        speed: 1200,
+        speed: 1500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         adaptiveHeight: true,
         autoplay: false,
+        dots: false,
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/previous_icon.png"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="icons/next_icon.png"></button>',
-        responsive: [{
-            breakpoint: 992,
-            settings: {
-                dots: true,
-                arrows: false
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: false,
+                arrows: true
+              }
             },
-
-            breakpoint: 480,
-            settings: {
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true
+              }
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
                 dots: true,
-                arrows: false
+                arrows: false,
+                infinite: true
+              }
             }
-
-        }]
-
+          ]
     });
 
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function () {
